@@ -35,7 +35,7 @@ const Navbar = () => {
   ?<button onClick={()=>{localStorage.removeItem('auth-token');window.location.replace('/')}}>Logout</button>
   :<Link to='/Login'><button>Login</button></Link>}
   {localStorage.getItem('auth-token')
-  ?<button><Link to='http://localhost:5173' style={{textDecoration: 'none'}} >Admin Panel</Link></button>:<></>}
+  ?<button><Link to='https://admin-store-section.vercel.app/addproduct' style={{textDecoration: 'none'}} >Admin Panel</Link></button>:<></>}
 <Link to='/cart'><img src={cart_icon} alt="" /></Link>
 <div className="nav-cart-count">{getTotalCartItems()}</div>
 </div>
